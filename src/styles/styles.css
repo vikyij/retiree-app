@@ -12,6 +12,7 @@
 }
 
 body {
+  box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
@@ -61,11 +62,15 @@ h6 {
   line-height: 170%;
 }
 
+.small-text {
+  font-size: 14px;
+  line-height: 150%;
+}
+
 .small-caption {
   font-size: 14px;
   line-height: 125%;
   font-weight: 700;
-
 }
 
 button {
@@ -105,3 +110,4 @@ input {
 a {
   text-decoration: none;
 }
+
