@@ -1,9 +1,10 @@
 import Navbar from "../../components/Navigation";
+import FirstSection from "../../components/FirstSection";
 const LandingPage = () => {
   return (
     <>
       <Navbar />
-      <p>Landing Page</p>
+      <FirstSection />
     </>
   );
 };
