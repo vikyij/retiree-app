@@ -1,0 +1,100 @@
+:root {
+  --primary-green: #066523;
+  --green-500: #38844f;
+  --green-700: #05511c;
+  --dark-green: #081b0e;
+  --gray-100: #f3f3f3;
+  --gray-300: #b5b5b5;
+  --gray-400: #646464;
+  --gray-500: #3c3c3c;
+  --error-red: #d62020;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 125%;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+.body {
+  font-size: 16px;
+  line-height: 170%;
+}
+
+.subheading {
+  font-size: 18px;
+  line-height: 125%;
+}
+
+button {
+  background-color: var(--primary-green);
+  color: var(--white);
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: var(--green-500);
+}
+
+.outline-button {
+  background-color: var(--white);
+  color: var(--primary-green);
+  border: 1px solid var(--primary-green);
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.outline-button:hover {
+  background-color: var(--primary-green);
+  color: var(--white);
+}
+
+input {
+  padding: 10px;
+  border: 1px solid var(--gray-400);
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
