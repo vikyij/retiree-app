@@ -51,14 +51,21 @@ h6 {
   font-size: 20px;
 }
 
+.subheading {
+  font-size: 18px;
+  line-height: 125%;
+}
+
 .body {
   font-size: 16px;
   line-height: 170%;
 }
 
-.subheading {
-  font-size: 18px;
+.small-caption {
+  font-size: 14px;
   line-height: 125%;
+  font-weight: 700;
+
 }
 
 button {

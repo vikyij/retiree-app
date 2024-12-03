@@ -1,0 +1,20 @@
+.card-wrapper {
+  background-color: var(--white);
+  border-radius: 6px;
+  padding: 20px;
+  width: 100%;
+  max-width: 290px;
+  height: 200px;
+}
+
+.card-content {
+  font-size: 14px;
+  color: var(--gray-400);
+}
+
+@media screen and (max-width: 375px) {
+  .card-wrapper {
+    width: fit-content;
+    max-width: 100%;
+  }
+}

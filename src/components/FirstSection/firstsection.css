@@ -1,4 +1,4 @@
-.container {
+.first-container {
   display: flex;
   justify-content: space-between;
   padding: 50px 80px;
@@ -29,7 +29,7 @@
 }
 
 @media screen and (max-width: 975px) {
-  .container {
+  .first-container {
     padding: 50px;
   }
   .left-section {
@@ -38,7 +38,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .container {
+  .first-container {
     flex-direction: column;
     padding: 50px 20px;
   }
