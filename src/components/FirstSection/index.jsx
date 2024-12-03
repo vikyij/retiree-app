@@ -3,7 +3,7 @@ import "./firstsection.css";
 
 const FirstSection = () => {
   return (
-    <section className="container">
+    <section className="first-container">
       <div className="left-section">
         <h2>One platform,<br /> Two Solutions</h2>
         <h6>Simplifying Benefits for Retirees and Employers</h6>
