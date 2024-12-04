@@ -36,7 +36,6 @@ const Register = () => {
         abortEarly: false,
       });
       setErrors({});
-      console.log("Form submitted:", formData);
       // Assuming there's a backend api called register, I'll make a post request using the axios package
       //   const response = await axios.post("/api/register", {
       //     rsaPin: formData.rsaPin,
