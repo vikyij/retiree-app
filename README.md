@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# Retiree Registration System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application for retiree registration and management. This application allows users to register, log in, and access a dashboard after authentication. Built with React and using React Router for navigation, the app includes features such as password visibility toggle and form validation.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Landing Page**: Introduction and main navigation for users.
+- **Registration Page**: Users can register for the retiree system.
+- **Login Page**: Allows users to log into their accounts.
+- **Dashboard Page**: Users can access their personal dashboard after logging in.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React, React Router, Antd.
+- **Form Validation**: Yup (for validation schemas)
+- **CSS**: Custom styling with plain CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup and Installation
 
-### `npm test`
+Follow the steps below to get the project up and running on your local machine:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+Before you begin, ensure you have the following installed:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Node.js** (version 14.x or higher)
+- **npm** (Node package manager) or **yarn**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
 
-### `npm run eject`
+   ```
+   git clone https://github.com/yourusername/retiree-app.git
+   cd retiree-app
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Install dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```
+       npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   Or if you are using yarn, run:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```
+       yarn install
+   ```
 
-## Learn More
+3. To start the development server, run:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```
+       npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   Or if you are using yarn, run:
 
-### Code Splitting
+   ```
+       yarn start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. The application will be available in your browser at:
+   ```
+       http://localhost:3000
+   ```
 
-### Analyzing the Bundle Size
+### Folder Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Here is a general overview of the folder structure:
 
-### Making a Progressive Web App
+```
+/referee-app
+│
+├── /public                # Static files like index.html
+├── /src                   # React source files
+│   ├── /components        # Reusable components (Navbar, Footer, Card, etc.)
+│   ├── /pages             # Individual pages (LandingPage, Login, Register, Dashboard)
+│   ├── /styles            # Custom CSS files
+│   ├── App.js             # Main application entry point
+│   └── index.js           # Renders the app into the DOM
+├── .gitignore             # Files and directories to ignore in version control
+├── package.json           # Project dependencies and scripts
+└── README.md              # This file
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
 
-### Advanced Configuration
+### Notes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Validation: The forms are validated using the Yup validation schema for user input (both in registration and login).
+- Authentication: User authentication is simulated with localStorage for now. In a production environment, it would connect to an API for login and registration.
+- Routing: Uses react-router-dom for page navigation.
 
-### Deployment
+### Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Thanks to React(https://react.dev/) for providing the foundation of this project.
+- Thanks to Yup(https://github.com/jquense/yup?tab=readme-ov-file) for form validation.

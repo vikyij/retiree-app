@@ -11,13 +11,12 @@ const SecondSection = () => {
       </h4>
       <div className="card-container">
         {cardContent.map((card, key) => (
-          <>
-            <Card
-              icon={card.icon}
-              heading={card.heading}
-              content={card.content}
-            />
-          </>
+          <Card
+            icon={card.icon}
+            heading={card.heading}
+            content={card.content}
+            key={key}
+          />
         ))}
       </div>
     </section>
