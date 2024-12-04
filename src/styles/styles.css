@@ -3,7 +3,9 @@
   --green-500: #38844f;
   --green-700: #05511c;
   --dark-green: #081b0e;
+  --gray: #f9f9f9;
   --gray-100: #f3f3f3;
+  --gray-200: #c0c0c1;
   --gray-300: #b5b5b5;
   --gray-400: #646464;
   --gray-500: #3c3c3c;
@@ -102,12 +104,16 @@ button:hover {
 
 input {
   padding: 10px;
-  border: 1px solid var(--gray-400);
+  border: 1px solid var(--gray-200);
   margin-bottom: 15px;
-  width: 100%;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+input::placeholder {
+  color: var(--gray-200);
 }
 
 a {
   text-decoration: none;
 }
-

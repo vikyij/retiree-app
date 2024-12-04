@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import "./footer.css";
 import { Link } from "react-router-dom";
-
+import { ReactComponent as Arrowup } from "../../images/arrow-up.svg";
+import "./footer.css";
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -28,7 +28,7 @@ const Footer = () => {
       window.removeEventListener("scroll", toggleVisibility);
     };
   }, []);
-  
+
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -57,7 +57,7 @@ const Footer = () => {
           </div>
           {isVisible && (
             <button className="back-to-top" onClick={scrollToTop}>
-              &#8593;
+              <Arrowup />
             </button>
           )}
         </section>
