@@ -37,6 +37,7 @@ const Register = () => {
       });
       setErrors({});
       // Assuming there's a backend api called register, I'll make a post request using the axios package
+      // try{
       //   const response = await axios.post("/api/register", {
       //     rsaPin: formData.rsaPin,
       //     email: formData.email,
@@ -124,7 +125,7 @@ const Register = () => {
                 name="password"
                 value={formData.password}
                 onChange={handleChange}
-                placeholder="Enter your password"
+                placeholder="Enter Password"
               />
               <span
                 className="toggle-password"
@@ -150,7 +151,7 @@ const Register = () => {
                 name="confirmPassword"
                 value={formData.confirmPassword}
                 onChange={handleChange}
-                placeholder="Confirm your password"
+                placeholder="Confirm Password"
               />
               <span
                 className="toggle-password"
