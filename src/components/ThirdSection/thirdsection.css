@@ -1,8 +1,9 @@
 .third-section {
-  padding: 50px 0px;
+  padding: 50px 0px 0px;
   display: flex;
   position: relative;
   justify-content: space-between;
+  max-height: 620px;
 }
 
 .third-container {
@@ -32,6 +33,7 @@
 @media screen and (max-width: 1200px) {
   .third-section {
     justify-content: center;
+    max-height: 100%;
   }
   .third-section img {
     display: none;
