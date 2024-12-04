@@ -1,9 +1,10 @@
 .card-wrapper {
+  flex: 1 1 250px;
   background-color: var(--white);
   border-radius: 6px;
   padding: 20px;
   width: 100%;
-  max-width: 290px;
+  max-width: 250px;
   height: 200px;
 }
 
@@ -11,6 +12,7 @@
   font-size: 14px;
   color: var(--gray-400);
 }
+
 
 @media screen and (max-width: 375px) {
   .card-wrapper {

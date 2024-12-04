@@ -22,6 +22,7 @@ const Register = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -36,6 +37,7 @@ const Register = () => {
         abortEarly: false,
       });
       setErrors({});
+      setLoading(true);
       // Assuming there's a backend api called register, I'll make a post request using the axios package
       // try{
       //   const response = await axios.post("/api/register", {
@@ -45,9 +47,25 @@ const Register = () => {
       //     password: formData.password,
       //   });
       //   setMessage(response.data.message || "Registration successful!");
+      //   setLoading(false);
+      //   setFormData({
+      //     username: "",
+      //     email: "",
+      //     password: "",
+      //     confirmPassword: "",
+      //   });
       // } catch (error) {
       //   setMessage(error.response?.data?.message || "Registration failed!");
       // }
+      // On success of api call, set loading false, clear the fields and navigate to login
+      setLoading(false);
+      setFormData({
+        username: "",
+        email: "",
+        password: "",
+        confirmPassword: "",
+      });
+      navigate("/login");
     } catch (error) {
       let errList = {};
       error.inner.forEach((e) => {
@@ -176,7 +194,7 @@ const Register = () => {
             Help text
           </p>
           <button type="submit" className="register-button">
-            Register
+            {loading ? "Loading" : "Register"}
           </button>
         </form>
         <p className="login-link">

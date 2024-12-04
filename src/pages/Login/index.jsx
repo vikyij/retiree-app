@@ -15,6 +15,7 @@ const Login = () => {
   const [passwordVisibility, setPasswordVisibility] = useState(false);
 
   const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -29,7 +30,7 @@ const Login = () => {
         abortEarly: false,
       });
       setErrors({});
-
+      setLoading(true);
       // Assuming there's a backend api called login, make a post request using the axios package (import axios from 'axios')
       // try {
       //   const response = await axios.post("/api/login", {
@@ -43,19 +44,33 @@ const Login = () => {
       //   setMessage("Login successful!");
       //   Redirect the user to a protected route
       //   navigate("/dashboard");
+      //   setLoading(false);
+      //   setFormData({
+      //     username: "",
+      //     email: "",
+      //     password: "",
+      //     confirmPassword: "",
+      //   });
       // } catch (error) {
       //   setMessage(error.response?.data?.message || "Login failed!");
       // }
+
+      // On success, set loading false, clear the fields and navigate to dashboard
+      setLoading(false);
+      setFormData({
+        username: "",
+        email: "",
+        password: "",
+        confirmPassword: "",
+      });
     } catch (error) {
       let errList = {};
       error.inner.forEach((e) => {
         errList = { ...errList, [e.path]: e.message };
       });
-      console.log(errList);
-      setErrors(errList);
     }
   };
-  console.log(formData);
+
   const togglePasswordVisibility = () => {
     setPasswordVisibility(!passwordVisibility);
   };
@@ -116,7 +131,7 @@ const Login = () => {
           </div>
 
           <button type="submit" className="register-button">
-            Login
+            {loading ? "loading" : "Login"}
           </button>
         </form>
         <p className="login-link">
